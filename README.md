@@ -13,14 +13,14 @@ baseado no WebKit2GTK 4.1.
 ### Dependências no Debian/Ubuntu
 
 ```bash
-sudo apt install lua5.3 lua-lgi gir1.2-webkit2-4.1
+sudo apt install lua5.3 lua-lgi gir1.2-webkit2-4.1 git libwebkit2gtk-4.1-dev
 
 ### Instalação do Navegador
 
 ```bash
 luarocks install stileweb
 
-## Executar
+### Executar o Navegador
 
 ```bash
 stileweb
