@@ -1,29 +1,29 @@
-package = "stileweb"
+package = "stileweb-browser"
 version = "1.0.1-1"
 
 source = {
-   url = "https://github.com/SilvioNetoesBrasil/STileWeb/raw/refs/heads/main/STileWeb-v1.0.1-1.tar.gz"
+   url = "git+https://github.com/SilvioNetoesBrasil/STileWeb",
+   tag = "v1.0.1-1"
 }
 
 description = {
-   summary = "STileWeb - Navegador web simples em Lua",
+   summary = "STileWeb - Navegador simples em Lua usando WebKit2GTK",
    detailed = [[
-STileWeb é um navegador web simples escrito em Lua 5.3,
-utilizando WebKit2GTK 4.1.
+STileWeb (SilvioTileWeb Browser) é um navegador simples
+feito em Lua 5.3 usando WebKit2GTK 4.1.
    ]],
-   homepage = "https://github.com/SilvioNetoesBrasil/STileWeb",
+   homepage = "https://github.com/SilvioNetoesBrasil/STileWeb/raw/refs/heads/main/STileWeb-v1.0.1-1.tar.gz",
    license = "MIT"
 }
 
 dependencies = {
-   "lua >= 5.3",
-   "lua-lgi"
+   "lua >= 5.3"
 }
 
 build = {
    type = "builtin",
    modules = {
-      ["STileWeb"] = "src/STileWeb.lua"
+      ["stileweb"] = "src/STileWeb.lua"
    },
    install = {
       bin = {
@@ -31,4 +31,3 @@ build = {
       }
    }
 }
-
