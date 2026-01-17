@@ -100,12 +100,43 @@ Ou diretamente pelo link do pacote:
 
 ---
 
+Ou baixe o pacote (.tar.gz) no github releases:
+
+🔗 https://github.com/SilvioNetoesBrasil/STileWeb/releases/download/v1.0.1-1/STileWeb-v1.0.1-1.tar.gz
+
+---
+
+
+
+---
+
 ## ▶️ Execução do Navegador
 
 Após a instalação, execute o STileWeb com:
 
 ```bash
 stileweb
+```
+## Entrar na Pasta do STileWeb-v1.0.1-1
+
+O STileWeb é distribuído via **LuaRocks**.
+
+### Entre na pasta extraída
+
+```bash
+cd STileWeb-v1.0.1-1
+```
+
+---
+
+## 📥 Instalação do STileWeb Em Arquivo Local
+
+O STileWeb é distribuído via **LuaRocks**.
+
+### Instalar o navegador
+
+```bash
+sudo luarocks install ./rockspec/stileweb-1.0.1-1.rockspec
 ```
 
 ---
