@@ -44,18 +44,20 @@ Projetado para funcionar tanto em **Ubuntu 24.04 LTS** quanto no **SilvioLinux 1
 
 ## 📦 Dependências
 
-### Ubuntu 24.04 LTS
-
-```bash
-sudo apt update
-sudo apt install lua5.3 lua-lgi gir1.2-webkit2-4.1 git \
-liblua5.3-dev libwebkit2gtk-4.1-dev luarocks
-
-## 📦 Dependências
-
 ### SilvioLinux 1.0 LTS
 
 ```bash
 sudo opkg update
 sudo opkg install lua5.3 lua-lgi gir1.2-webkit2-4.1 git \
 liblua5.3-devel libwebkit2gtk-4.1-devel luarocks
+
+---
+
+## 📦 Dependências
+
+### Ubuntu 24.04 LTS
+
+```bash
+sudo apt update
+sudo apt install lua5.3 lua-lgi gir1.2-webkit2-4.1 git \
+liblua5.3-dev libwebkit2gtk-4.1-dev luarocks
