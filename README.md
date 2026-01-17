@@ -117,6 +117,18 @@ Após a instalação, execute o STileWeb com:
 ```bash
 stileweb
 ```
+## Extrair o Arquivo STileWeb-v1.0.1-1.tar.gz
+
+O STileWeb é distribuído via **LuaRocks**.
+
+### Entre na pasta extraída
+
+```bash
+tar xvf STileWeb-v1.0.1-1.tar.gz
+```
+
+---
+
 ## Entrar na Pasta do STileWeb-v1.0.1-1
 
 O STileWeb é distribuído via **LuaRocks**.
