@@ -13,7 +13,7 @@ baseado no WebKit2GTK 4.1.
 ### Dependências no Debian/Ubuntu
 
 ```bash
-sudo apt install lua5.3 lua-lgi gir1.2-webkit2-4.1 git libwebkit2gtk-4.1-dev
+sudo apt install lua5.3 lua-lgi gir1.2-webkit2-4.1 git liblua5.3-dev libwebkit2gtk-4.1-dev
 
 ### Instalação do Navegador
 
