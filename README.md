@@ -1,70 +1,59 @@
 # STileWeb (SilvioTileWeb Browser)
 
-Navegador web **leve, minimalista e experimental**, baseado no **WebKit2GTK 4.1**, desenvolvido com foco em **baixo consumo de recursos**, simplicidade e portabilidade entre **Ubuntu 24.04 LTS** e **SilvioLinux 1.0**.
+STileWeb é um navegador **leve, minimalista e focado em desempenho**, desenvolvido em **C** e **Lua** e baseado no **WebKit2GTK 4.1**, projetado para funcionar em sistemas modernos como **Ubuntu 24.04 LTS** e também em sistemas personalizados e leves como o **SilvioLinux 1.0**, que utiliza o gerenciador de pacotes **opkg**.
 
-O STileWeb utiliza **Lua 5.3**, **LGI** e **WebKit2GTK**, com instalação simplificada via **LuaRocks**.
+Este projeto prioriza simplicidade, baixo consumo de recursos e facilidade de instalação via **LuaRocks**.
 
 ---
 
-## 🎯 Objetivos do Projeto
+## ✨ Características
 
-- Ser extremamente leve e rápido
-- Funcionar em hardware antigo
+- Baseado no **WebKit2GTK 4.1**
 - Interface minimalista
-- Fácil de compilar, instalar e manter
-- Base sólida e moderna (WebKit2GTK 4.1)
+- Escrita em **Lua** com **LGI (GObject Introspection)**
+- Instalação simples via **LuaRocks**
+- Ideal para máquinas antigas ou sistemas enxutos
 
 ---
 
 ## 🖥️ Requisitos de Sistema
 
-### 🔻 Requisitos Mínimos
+### 🔹 Requisitos Mínimos
 
-| Componente | Especificação |
-|---------|---------------|
-| CPU | Pentium 233 MHz |
-| Memória RAM | 128 MB |
-| Disco | **200 MB livres** |
-| Sistema | Ubuntu 24.04 LTS ou SilvioLinux 1.0 |
-| Arquitetura | x86 |
+- **Processador:** Pentium 233 MHz
+- **Memória RAM:** 128 MB
+- **Disco:** ~150 MB livres
+- **Sistema Operacional:**
+  - Ubuntu 24.04 LTS
+  - SilvioLinux 1.0
 
-> ⚠️ Indicado apenas para navegação básica e sites simples.
+> Indicado para navegação básica e páginas simples.
 
 ---
 
-### 🔺 Requisitos Recomendados
+### 🔹 Requisitos Recomendados
 
-| Componente | Especificação |
-|---------|---------------|
-| CPU | Pentium 300 MHz ou superior |
-| Memória RAM | 256 MB |
-| Disco | **350 MB livres** |
-| Sistema | Ubuntu 24.04 LTS ou SilvioLinux 1.0 |
-| Arquitetura | x86 |
+- **Processador:** Pentium 300 MHz ou superior
+- **Memória RAM:** 256 MB
+- **Disco:** ~250 MB livres
+- **Sistema Operacional:**
+  - Ubuntu 24.04 LTS
+  - SilvioLinux 1.0
 
-> ✅ Melhor estabilidade e compatibilidade com mais sites.
+> Recomendado para melhor estabilidade e carregamento de páginas modernas leves.
 
 ---
 
 ## 📦 Dependências
 
-### Dependências Principais
+### Ubuntu / Debian
 
-- Lua 5.3
-- lua-lgi
-- WebKit2GTK 4.1
-- LuaRocks
-- Git
-
----
-
-## 🐧 Instalação das Dependências
-
-### Ubuntu / Debian (Ubuntu 24.04 LTS)
+Instale as dependências com o comando:
 
 ```bash
-sudo apt update
-sudo apt-get install -y \
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install \
   lua5.3 \
   lua-lgi \
   gir1.2-webkit2-4.1 \
@@ -78,8 +67,11 @@ sudo apt-get install -y \
 
 ### SilvioLinux 1.0 (opkg)
 
+Instale as dependências com:
+
 ```bash
 sudo opkg update
+sudo opkg upgrade
 sudo opkg install \
   lua5.3 \
   lua-lgi \
@@ -92,42 +84,31 @@ sudo opkg install \
 
 ---
 
-## 📥 Instalação do STileWeb via LuaRocks
+## 📥 Instalação do STileWeb
 
-### 1️⃣ Clonar o Repositório
+O STileWeb é distribuído via **LuaRocks**.
+
+### Instalar o navegador
 
 ```bash
-git clone https://github.com/seu-usuario/STileWeb.git
-cd STileWeb
+sudo luarocks install stileweb
 ```
+
+Ou diretamente pelo link do pacote:
+
+🔗 https://luarocks.org/modules/silvionetoesbrasil/stileweb/
 
 ---
 
-### 2️⃣ Instalar via LuaRocks
+## ▶️ Execução do Navegador
 
-#### Instalação local (recomendada)
-
-```bash
-luarocks make --local
-```
-
-Ou instalação global:
-
-```bash
-sudo luarocks make
-```
-
----
-
-## ▶️ Executando o Navegador
-
-Após a instalação:
+Após a instalação, execute o STileWeb com:
 
 ```bash
 stileweb
 ```
 
-Ou diretamente com Lua:
+Ou, se instalado localmente:
 
 ```bash
 lua stileweb.lua
@@ -135,59 +116,30 @@ lua stileweb.lua
 
 ---
 
-## 📁 Estrutura Básica do Projeto
+## 🧪 Testado em
 
-```text
-STileWeb/
-├── stileweb.lua
-├── init.lua
-├── ui/
-│   └── window.lua
-├── README.md
-└── rockspec/
-```
-
----
-
-## ⚙️ Observações Importantes
-
-- O desempenho depende fortemente do site acessado
-- Sites modernos e pesados podem não funcionar corretamente
-- Ideal para documentação, wikis, blogs simples e intranet
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-- **Lua 5.3**
-- **LGI (GObject Introspection)**
-- **WebKit2GTK 4.1**
-- **LuaRocks**
+- Ubuntu 24.04 LTS
+- SilvioLinux 1.0 (opkg)
+- Ambientes leves (Openbox, Fluxbox, LXDE)
 
 ---
 
 ## 📜 Licença
 
-Este projeto é distribuído sob licença **MIT**.
+Este projeto é distribuído sob licença livre/open-source. Consulte o arquivo de licença para mais detalhes.
 
 ---
 
-## 🤝 Contribuições
+## 👤 Autor
+
+**Silvio Ramalho Neto da Silva (silvionetoesbrasil)**  
+Projeto STileWeb / SilvioTileWeb Browser
+
+---
+
+## 💡 Observações Finais
+
+- Para melhor desempenho em máquinas antigas, recomenda-se desativar JavaScript pesado.
+- STileWeb é ideal para uso educacional, sistemas embarcados e distribuições Linux leves.
 
 Contribuições são bem-vindas!
-
-- Correções
-- Otimizações
-- Melhorias de desempenho
-- Suporte a hardware antigo
-
----
-
-## 📫 Contato
-
-Projeto: **STileWeb / SilvioTileWeb Browser**  
-Autor: Silvio Ramalho Neto da Silva
-
----
-
-**STileWeb – Navegação simples, leve e eficiente.** 🚀
