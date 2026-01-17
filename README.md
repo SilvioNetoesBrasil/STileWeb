@@ -1,66 +1,61 @@
-# STileWeb Browser (SilvioTileWeb)
+# STileWeb (SilvioTileWeb Browser)
 
-STileWeb é um navegador web **leve, rápido e minimalista**, desenvolvido em **Lua** e baseado no **WebKitGTK**, projetado para sistemas Linux com poucos recursos.
+STileWeb é um navegador web **leve, minimalista e rápido**, desenvolvido em **Lua**, utilizando **WebKit2GTK 4.1** via **LGI**, com foco em sistemas antigos ou de baixo consumo de recursos.
 
-## ✨ Características
-- Interface minimalista
-- Baseado em WebKitGTK
-- Escrito em Lua (LGI)
-- Consumo mínimo de RAM
-- Ideal para hardware antigo
+Projetado para funcionar tanto em **Ubuntu 24.04 LTS** quanto no **SilvioLinux 1.0**, incluindo suporte a sistemas com hardware limitado.
 
 ---
 
-## 🖥️ Requisitos de Sistema
+## ✨ Características
 
-### 🔹 Mínimos
-- CPU: Pentium 233 MHz
-- RAM: 128 MB
-- Disco: 120 MB livres
-- Sistema:
-  - Ubuntu 24.04 LTS (apt-get)
-  - SilvioLinux 1.0 (opkg)
+- Baseado em WebKit2GTK 4.1
+- Interface simples e minimalista
+- Escrita em Lua (LGI)
+- Baixo consumo de memória
+- Ideal para hardware antigo
+- Compatível com LuaRocks
 
-### 🔹 Recomendados
-- CPU: Pentium 300 MHz ou superior
-- RAM: 256 MB
-- Disco: 250 MB livres
+---
+
+## 📋 Requisitos do Sistema
+
+### 🔻 Requisitos Mínimos
+
+| Item        | Especificação |
+|------------|--------------|
+| CPU        | Pentium 233 MHz |
+| Memória   | 128 MB RAM |
+| Disco     | 80 MB livres |
+| SO         | Ubuntu 24.04 LTS ou SilvioLinux 1.0 |
+| Vídeo     | X11 ou Wayland simples |
+
+---
+
+### 🔺 Requisitos Recomendados
+
+| Item        | Especificação |
+|------------|--------------|
+| CPU        | Pentium 300 MHz |
+| Memória   | 256 MB RAM |
+| Disco     | 120 MB livres |
+| SO         | Ubuntu 24.04 LTS ou SilvioLinux 1.0 |
 
 ---
 
 ## 📦 Dependências
 
 ### Ubuntu 24.04 LTS
+
 ```bash
-sudo apt-get update
-sudo apt-get install -y \
-lua5.3 \
-lua-lgi \
-gir1.2-webkit2-4.1 \
-git \
-liblua5.3-dev \
-libwebkit2gtk-4.1-dev \
-luarocks
+sudo apt update
+sudo apt install lua5.3 lua-lgi gir1.2-webkit2-4.1 git \
+liblua5.3-dev libwebkit2gtk-4.1-dev luarocks
 
-
----
+## 📦 Dependências
 
 ### SilvioLinux 1.0 LTS
-```bash
-opkg update
-opkg install \
-lua \
-lua-lgi \
-webkitgtk \
-git \
-luarocks
 
----
-
-### Instalação do navegador
 ```bash
-sudo luarocks install stileweb
-
-### Executar o navegador
-```bash
-stileweb
+sudo opkg update
+sudo opkg install lua5.3 lua-lgi gir1.2-webkit2-4.1 git \
+liblua5.3-devel libwebkit2gtk-4.1-devel luarocks
