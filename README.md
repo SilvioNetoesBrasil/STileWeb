@@ -1,6 +1,6 @@
 # STileWeb (SilvioTileWeb Browser)
 
-STileWeb é um navegador web **leve, minimalista e rápido**, desenvolvido em **Lua**, utilizando **WebKit2GTK 4.1** via **LGI**, com foco em sistemas antigos ou de baixo consumo de recursos.
+STileWeb é um navegador web **leve, minimalista e rápido**, desenvolvido em 10% em **Lua**, e em 89% em **C**, utilizando **WebKit2GTK 4.1** via **LGI**, com foco em sistemas antigos ou de baixo consumo de recursos.
 
 Projetado para funcionar tanto em **Ubuntu 24.04 LTS** quanto no **SilvioLinux 1.0**, incluindo suporte a sistemas com hardware limitado.
 
