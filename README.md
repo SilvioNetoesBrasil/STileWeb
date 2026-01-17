@@ -42,7 +42,7 @@ Projetado para funcionar tanto em **Ubuntu 24.04 LTS** quanto no **SilvioLinux 1
 
 ---
 
-## 📦 Dependências
+### 📦 Dependências
 
 ### Ubuntu 24.04 LTS
 
@@ -53,7 +53,7 @@ liblua5.3-dev libwebkit2gtk-4.1-dev luarocks
 
 ---
 
-## 📦 Dependências
+### 📦 Dependências
 
 ### SilvioLinux 1.0 LTS
 
@@ -66,6 +66,6 @@ liblua5.3-devel libwebkit2gtk-4.1-devel luarocks
 ### 📥 Instalação via LuaRocks
 sudo luarocks install stileweb
 
-▶️ Execução do Navegador
+### ▶️ Execução do Navegador
 
 stileweb
