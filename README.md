@@ -108,12 +108,6 @@ Após a instalação, execute o STileWeb com:
 stileweb
 ```
 
-Ou, se instalado localmente:
-
-```bash
-lua stileweb.lua
-```
-
 ---
 
 ## 🧪 Testado em
