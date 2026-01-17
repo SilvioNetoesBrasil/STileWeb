@@ -137,3 +137,11 @@ Projeto STileWeb / SilvioTileWeb Browser
 - STileWeb é ideal para uso educacional, sistemas embarcados e distribuições Linux leves.
 
 Contribuições são bem-vindas!
+
+acesse o site do silvio ramalho neto da silva:
+
+🔗 https://silvioramalhoneto.com.br/
+
+acesse o site oficial do silviolinux:
+
+🔗 https://silviolinux.com.br/
