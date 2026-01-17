@@ -1,27 +1,66 @@
-# STileWeb Browser
+# STileWeb Browser (SilvioTileWeb)
 
-STileWeb (SilvioTileWeb Browser) é um navegador web simples escrito em Lua 5.3,
-baseado no WebKit2GTK 4.1.
+STileWeb é um navegador web **leve, rápido e minimalista**, desenvolvido em **Lua** e baseado no **WebKitGTK**, projetado para sistemas Linux com poucos recursos.
 
-## Requisitos
+## ✨ Características
+- Interface minimalista
+- Baseado em WebKitGTK
+- Escrito em Lua (LGI)
+- Consumo mínimo de RAM
+- Ideal para hardware antigo
 
-- Lua 5.3
-- lua-lgi
-- GTK+ 3
-- WebKit2GTK 4.1
+---
 
-### Dependências no Debian/Ubuntu
+## 🖥️ Requisitos de Sistema
 
+### 🔹 Mínimos
+- CPU: Pentium 233 MHz
+- RAM: 128 MB
+- Disco: 120 MB livres
+- Sistema:
+  - Ubuntu 24.04 LTS (apt-get)
+  - SilvioLinux 1.0 (opkg)
+
+### 🔹 Recomendados
+- CPU: Pentium 300 MHz ou superior
+- RAM: 256 MB
+- Disco: 250 MB livres
+
+---
+
+## 📦 Dependências
+
+### Ubuntu 24.04 LTS
 ```bash
-sudo apt install lua5.3 lua-lgi gir1.2-webkit2-4.1 git liblua5.3-dev libwebkit2gtk-4.1-dev
+sudo apt-get update
+sudo apt-get install -y \
+lua5.3 \
+lua-lgi \
+gir1.2-webkit2-4.1 \
+git \
+liblua5.3-dev \
+libwebkit2gtk-4.1-dev \
+luarocks
 
-### Instalação do Navegador
 
+---
+
+### SilvioLinux 1.0 LTS
 ```bash
-luarocks install stileweb
+opkg update
+opkg install \
+lua \
+lua-lgi \
+webkitgtk \
+git \
+luarocks
 
-### Executar o Navegador
+---
 
+### Instalação do navegador
+```bash
+sudo luarocks install stileweb
+
+### Executar o navegador
 ```bash
 stileweb
-
