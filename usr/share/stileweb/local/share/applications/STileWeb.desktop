@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=1.0.1-1
+Name=STileWeb
+Comment=Navegador STileWeb
+Exec=./src/STileWeb.lua %u
+Icon=STileWeb-v0.1.1/icon/icon.png
+Terminal=false
+Type=Application
+Categories=Network;WebBrowser;
+StartupNotify=true
+
+
+
+
+
+

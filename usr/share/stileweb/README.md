@@ -56,10 +56,10 @@ sudo apt-get upgrade
 sudo apt-get install \
   lua5.3 \
   lua-lgi \
-  gir1.2-webkit2-4.0 \
+  gir1.2-webkit2-4.1 \
   git \
   liblua5.3-dev \
-  libwebkit2gtk-4.0-dev \
+  libwebkit2gtk-4.1-dev \
   luarocks
 ```
 
@@ -75,10 +75,10 @@ sudo opkg upgrade
 sudo opkg install \
   lua5.3 \
   lua-lgi \
-  gir1.2-webkit2-4.0 \
+  gir1.2-webkit2-4.1 \
   git \
   liblua5.3-devel \
-  libwebkit2gtk-4.0-devel \
+  libwebkit2gtk-4.1-devel \
   luarocks
 ```
 
@@ -102,7 +102,7 @@ Ou diretamente pelo link do pacote:
 
 Ou baixe o pacote (.tar.gz) no github releases:
 
-🔗 https://github.com/SilvioNetoesBrasil/STileWeb/releases/download/v1.0.1-1/STileWeb-v2.0.0-1.tar.gz
+🔗 https://github.com/SilvioNetoesBrasil/STileWeb/releases/download/v1.0.1-1/STileWeb-v1.0.1-1.tar.gz
 
 ---
 
