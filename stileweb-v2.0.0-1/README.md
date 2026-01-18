@@ -8,7 +8,7 @@ Este projeto prioriza simplicidade, baixo consumo de recursos e facilidade de in
 
 ## ✨ Características
 
-- Baseado no **WebKit2GTK 4.1**
+- Baseado no **WebKit2GTK 4.0**
 - Interface minimalista
 - Escrita em **Lua** com **LGI (GObject Introspection)**
 - Instalação simples via **LuaRocks**
