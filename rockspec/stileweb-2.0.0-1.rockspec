@@ -12,7 +12,7 @@ description = {
 STileWeb (SilvioTileWeb Browser) é um navegador simples
 feito em Lua 5.3 usando WebKit2GTK 4.0.
    ]],
-   homepage = "https://github.com/SilvioNetoesBrasil/STileWeb/raw/refs/heads/main/stileweb-v2.0.0-1/STileWeb-v2.0.0-1.tar.gz",
+   homepage = "https://github.com/SilvioNetoesBrasil/STileWeb/raw/refs/heads/main/STileWeb-v2.0.0-1.tar.gz",
    license = "MIT"
 }
 
