@@ -26,6 +26,7 @@ Este projeto prioriza simplicidade, baixo consumo de recursos e facilidade de in
 - **Sistema Operacional:**
   - Ubuntu 24.04 LTS
   - SilvioLinux 1.0
+  - Godzilla Linux 1.0
 
 > Indicado para navegação básica e páginas simples.
 
