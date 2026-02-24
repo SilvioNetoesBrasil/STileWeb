@@ -65,22 +65,46 @@ sudo apt-get install \
 
 ---
 
-### SilvioLinux 1.0 (opkg)
+## 📦 Dependências
+
+### SilvioLinux 1.0 (silviopkg)
 
 Instale as dependências com:
 
 ```bash
-sudo opkg update
-sudo opkg upgrade
-sudo opkg install \
+sudo silviopkg --sync
+sudo silviopkg --upgrade
+sudo silviopkg --install \
   lua5.3 \
   lua-lgi \
   gir1.2-webkit2-4.0 \
   git \
   liblua5.3-devel \
-  libwebkit2gtk-4.0-devel \
+  libwebkit2gtk-4.1-devel \
   luarocks
 ```
+
+---
+
+## 📦 Dependências
+
+### Godzilla Linux 1.0 (godzillapkg)
+
+Instale as dependências com:
+
+```bash
+sudo godzillapkg --sync
+sudo godzillapkg --upgrade
+sudo godzillapkg --install \
+  lua5.3 \
+  lua-lgi \
+  gir1.2-webkit2-4.0 \
+  git \
+  liblua5.3-devel \
+  libwebkit2gtk-4.1-devel \
+  luarocks
+```
+
 
 ---
 
@@ -121,7 +145,7 @@ stileweb
 
 O STileWeb é distribuído via **LuaRocks**.
 
-### Entre na pasta extraída
+### Extrair o Arquivo (.tar.gz)
 
 ```bash
 tar xvf STileWeb-v1.0.1-1.tar.gz
@@ -156,8 +180,8 @@ sudo luarocks install ./rockspec/stileweb-1.0.1-1.rockspec
 ## 🧪 Testado em
 
 - Ubuntu 24.04 LTS
-- SilvioLinux 1.0 (opkg)
-- Ambientes leves (Openbox, Fluxbox, LXDE)
+- SilvioLinux 1.0 (silviopkg)
+- Ambientes leves (IceWM, BSPWM, LXDE, DWM)
 
 ---
 
